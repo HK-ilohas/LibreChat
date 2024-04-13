@@ -10,9 +10,9 @@ fileConfig:
       # Maximum total size for all files in a single request in MB
       totalSizeLimit: 50
       # In case you wish to limit certain filetypes
-      # supportedMimeTypes:
-      #   - "image/.*"
-      #   - "application/pdf"
+      supportedMimeTypes:
+        - "image/.*"
+        - "application/pdf"
     openAI:
     # Disables file uploading to the OpenAI endpoint
       disabled: true
@@ -53,7 +53,7 @@ endpoints:
     # (optional) Models that support retrieval, will default to latest known OpenAI models that support the feature
     # retrievalModels: ["gpt-4-turbo-preview"]
     # (optional) Assistant Capabilities available to all users. Omit the ones you wish to exclude. Defaults to list below.
-    # capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
+    capabilities: ["code_interpreter", "retrieval", "actions", "tools", "image_vision"]
   custom:
     - name: "cohere"
       apiKey: "${COHERE_API_KEY}"

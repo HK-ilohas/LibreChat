@@ -19,7 +19,6 @@ services:
     - type: bind
       source: ./librechat.yaml
       target: /app/librechat.yaml
-    image: ghcr.io/danny-avila/librechat:latest
 
 # ---------------------------------------------------
 
